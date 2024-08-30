@@ -1,0 +1,2 @@
+Ответ: 
+{'statusCode': 400, 'error': 'Bad Request', 'message': 'Parameter "geocode": "geocode" is not allowed to be empty'}
