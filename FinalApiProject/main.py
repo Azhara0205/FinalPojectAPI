@@ -76,8 +76,7 @@ def test_invalid_geocode(api_keys, base_urls):
         "format": "json"
     }
     response = requests.get(url, params=params)
-    assert response.status_code in [400, 404]
+    assert response.status_code == 200
     response_data = response.json()
-    print("Ответ: ")
-    print(response_data)
+    assert "error" in response_data
 
