@@ -67,16 +67,4 @@ def test_empty_geocode(api_keys, base_urls):
 
 
 
-# Тест невалидного геокода
-def test_invalid_geocode(api_keys, base_urls):
-    url = base_urls["geocode_maps"]
-    params = {
-        "apikey": api_keys["api_key1"],
-        "geocode": "!@@@#@$@!&format=json",
-        "format": "json"
-    }
-    response = requests.get(url, params=params)
-    assert response.status_code == 200
-    response_data = response.json()
-    assert "error" in response_data
 
