@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Aug 30 10:13:57 GMT 2024","Fri Aug 30 10:13:57 GMT 2024","610","FinalApiProject","main","","","","test_empty_geocode",""
+"passed","Fri Aug 30 10:13:54 GMT 2024","Fri Aug 30 10:13:55 GMT 2024","1397","FinalApiProject","main","","","","test_search",""
+"failed","Fri Aug 30 10:13:57 GMT 2024","Fri Aug 30 10:13:58 GMT 2024","681","FinalApiProject","main","","","","test_invalid_geocode",""
+"passed","Fri Aug 30 10:13:55 GMT 2024","Fri Aug 30 10:13:57 GMT 2024","1305","FinalApiProject","main","","","","test_geocode",""
