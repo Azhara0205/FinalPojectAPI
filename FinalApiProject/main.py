@@ -66,5 +66,18 @@ def test_empty_geocode(api_keys, base_urls):
     print(response_data)
 
 
+# Тест невалидного геокода
+def test_invalid_geocode(api_keys, base_urls):
+    url = base_urls["geocode_maps"]
+    params = {
+        "apikey": api_keys["api_key1"],
+        "geocode": "!@@@#@$@!&format=json",
+        "format": "json"
+    }
+    response = requests.get(url, params=params)
+    assert response.status_code in [400 or 404]
+    response_data = response.json()
+    print("Ответ: ")
+    print(response_data)
 
 
